@@ -3,7 +3,7 @@ import "./Home.scss";
 
 import menu from "../../assets/data/menuData";
 import MenuCard from "../MenuCard";
- 
+
 import brandingLogo from "../../assets/images/Soles on Wheels Logo.webp";
 import {
   FaChevronRight,
@@ -12,6 +12,9 @@ import {
   FaTwitter,
   FaSearch,
 } from "react-icons/fa";
+import SearchInput from "../SearchInput";
+import CategoryFilter from "../CategoryFilter";
+import FilterByPrice from "../FilterByPrice";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -49,12 +52,18 @@ const Home = () => {
           style={{ width: "300px", height: "300px" }}
         />
 
-        <h1>MUNNAR</h1>
-        <h1>MENU</h1>
+        <h1 style={{ color: "#8B0000" }}>MUNNAR</h1>
+        <h1 className="menu-text">MENU</h1>
         <p>-Since 2018-</p>
-        <p>Ph: +91 8921152086</p>
-        <p>www.solesonwheels.com</p>
-        <p>Moolakada, Pallivasal, Munnar, Kerala 685612</p>
+        <p>
+          Ph:{" "}
+          <span style={{ color: "#F59C1C", textDecoration: "underLine" }}>
+            +91 8921152086
+          </span>{" "}
+        </p>
+        <p style={{ color: "#F59C1C" }}>www.solesonwheels.com</p>
+        <p>Moolakada, Pallivasal, Munnar, </p>
+        <p> Kerala 685612</p>
 
         <div className="social-icons">
           <div>
@@ -65,52 +74,27 @@ const Home = () => {
           </div>
           <div>
             <FaTwitter color="#fff" />
-          </div> 
+          </div>
         </div>
       </div>
 
-      {/* Global Search Bar */}
-      <input
-        type="text"
-        placeholder="Search for any food item"
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        style={{ color: "#000" }}
-      />
+      <div className="filter-container">
+        <SearchInput
+          setSearchQuery={setSearchQuery}
+          searchQuery={searchQuery}
+        />
 
-      {/* Category Filter */}
-      <select
-        value={selectedCategory}
-        onChange={(e) => setSelectedCategory(e.target.value)}
-        style={{ color: "#000" }}
-      >
-        <option value="All" style={{ color: "#000" }}>
-          All Categories
-        </option>
-        {menu.map((category) => (
-          <option
-            style={{ color: "#000" }}
-            key={category.category}
-            value={category.category}
-          >
-            {category.category}
-          </option>
-        ))}
-      </select>
+        <CategoryFilter
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+          menu={menu}
+        />
 
-      {/* Sorting */}
-      <select
-        value={sortBy}
-        onChange={(e) => setSortBy(e.target.value)}
-        style={{ color: "#000" }}
-      >
-        <option value="">Sort by Price</option>
-        <option value="asc">Low to High</option>
-        <option value="desc">High to Low</option>
-      </select>
+        <FilterByPrice sortBy={sortBy} setSortBy={setSortBy} />
+      </div>
 
       {/* Render Menu */}
-      <div className="pb-300">
+      <div className="pb-300" style={{ marginBottom: "30px" }}>
         <MenuCard sortedMenu={sortedMenu} />
       </div>
     </div>

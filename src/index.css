@@ -6,7 +6,17 @@
 
 @font-face {
   font-family: "logo-text-font";
-  src: url("./assets//font/Avenir\ LT\ 35\ Light.ttf") format("truetype");
+  src: url("./assets/font/Avenir\ LT\ 35\ Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "home-logo-text";
+  src: url("./assets/font/FontsFree-Net-Lulo-Clean-W01-One-Bold\ \(1\).ttf");
+}
+
+@font-face {
+  font-family: "cinzel";
+  src: url("./assets/font/Cinzel-SemiBold.ttf");
 }
 
 body {

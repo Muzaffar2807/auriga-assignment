@@ -1,6 +1,6 @@
 .home-container {
   color: #fff;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 
   .company-branding {
@@ -10,6 +10,19 @@
     align-items: center;
     padding-top: 2rem;
 
+    h1{
+      font-family: 'home-logo-text';
+      font-size: 50px;
+      padding-bottom: 0;
+    }
+
+    p {
+      font-family: 'cinzel';
+    }
+
+    .menu-text{
+      font-size: 50px;
+    }
     .social-icons {
       display: flex;
       flex-wrap: wrap;
@@ -22,11 +35,20 @@
         border-radius: 50%;
         background-color: #ccc;
         margin-right: 1rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
         &:hover {
           cursor: pointer;
         }
       }
+
     }
+  }
+
+  .filter-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }

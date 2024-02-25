@@ -112,7 +112,7 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-1xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
                   {homeDropdown.map((item) => (
                     <div
@@ -177,7 +177,7 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 w-40 top-full z-10 mt-3   max-w-md overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 w-40 top-full z-10 mt-3   max-w-md overflow-hidden rounded-1xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
                   {moreDropdown.map((item) => (
                     <div
