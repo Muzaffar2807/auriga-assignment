@@ -49,7 +49,7 @@ const Home = () => {
         <img
           src={brandingLogo}
           alt="branding"
-          style={{ width: "300px", height: "300px" }}
+          style={{ width: "300px", height: "300px",  }}
         />
 
         <h1 style={{ color: "#8B0000" }}>MUNNAR</h1>

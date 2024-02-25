@@ -8,7 +8,7 @@ const FilterByPrice = ({ sortBy, setSortBy }) => {
       <select
         value={sortBy}
         onChange={(e) => setSortBy(e.target.value)}
-        className="filter-by-price" // added class for styling
+        className="filter-by-price"  
       >
         <option value="">Sort by Price</option>
         <option value="asc">Low to High</option>

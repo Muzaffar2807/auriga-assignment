@@ -19,6 +19,21 @@
   src: url("./assets/font/Cinzel-SemiBold.ttf");
 }
 
+@font-face {
+    font-family: "Trend Sans W00 Four";
+    src: url("https://db.onlinewebfonts.com/t/33ca94f43a53fc634323a6fe191ffd64.eot");
+    src: url("https://db.onlinewebfonts.com/t/33ca94f43a53fc634323a6fe191ffd64.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/33ca94f43a53fc634323a6fe191ffd64.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/33ca94f43a53fc634323a6fe191ffd64.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/33ca94f43a53fc634323a6fe191ffd64.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/33ca94f43a53fc634323a6fe191ffd64.svg#Trend Sans W00 Four")format("svg");
+}
+
+@font-face {
+  font-family: "Main-heading-font";
+  src: url('./assets/font/TrendSansW00-FourItalic.ttf');
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -31,6 +46,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: contain;
+  }
 }
 
 code {

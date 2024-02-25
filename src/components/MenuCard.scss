@@ -1,0 +1,45 @@
+.category-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px; 
+  gap: 3rem;
+}
+
+.even .right {
+  order: -1;  
+}
+
+.odd .left {
+  order: -1;  
+}
+
+.category-heading {
+  font-family: "Main-heading-font";
+  font-size: 40px;
+}
+
+ul {
+  li {
+    .item-name {
+      font-family: "cinzel";
+      font-size: 20px;
+      padding: 0.5rem;
+    }
+
+    .item-desc {
+      font-family: 'georgia';
+      font-size: 14px;
+      padding: 0.5rem;
+    }
+  }
+} 
+
+.item-image{
+ 
+  max-height: 90%;
+  max-width: 90%;
+  height: auto;
+  align-self: flex-start;
+ 
+}

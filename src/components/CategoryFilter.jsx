@@ -8,7 +8,7 @@ const CategoryFilter = ({ selectedCategory, setSelectedCategory, menu }) => {
       <select
         value={selectedCategory}
         onChange={(e) => setSelectedCategory(e.target.value)}
-        className="category-filter" // added class for styling
+        className="category-filter"  
       >
         <option value="All">All Categories</option>
         {menu.map((category) => (
