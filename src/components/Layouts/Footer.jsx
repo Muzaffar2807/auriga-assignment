@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <>
+    <div className="main-footer-wrapper">
       <div className="footer-wrapper">
         <div className="footer-div">
           <h2>USEFUL LINKS</h2>
@@ -130,9 +130,11 @@ const Footer = () => {
       <div className="bottom-footer">
         <a href="#">Destinations</a>
 
-        <a href="#" className="pl-8">Covide-19 FAQ's</a>
+        <a href="#" className="pl-8">
+          Covide-19 FAQ's
+        </a>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,3 +1,22 @@
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
 .app-layout {
-    padding-top: 76px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 76px;
+}
+
+.content-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-layout {
+  margin-top: auto;
 }

@@ -4,6 +4,8 @@ import "./Home.scss";
 import menu from "../../assets/data/menuData";
 import MenuCard from "../MenuCard";
 
+import backgroudImage from "../../assets/images/cuttlery.webp"
+
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -32,8 +34,10 @@ const Home = () => {
     : filteredMenu;
 
   return (
-    <div>
-      <h1>Restaurant Menu</h1>
+    <div className="home-container">
+      
+
+
 
       {/* Global Search Bar */}
       <input
@@ -64,7 +68,7 @@ const Home = () => {
       </select>
 
       {/* Render Menu */}
-      <div>
+      <div className="pb-300">
         <MenuCard sortedMenu={sortedMenu} />
       </div>
     </div>
