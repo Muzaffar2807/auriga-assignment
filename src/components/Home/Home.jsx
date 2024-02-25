@@ -3,8 +3,15 @@ import "./Home.scss";
 
 import menu from "../../assets/data/menuData";
 import MenuCard from "../MenuCard";
-
-import backgroudImage from "../../assets/images/cuttlery.webp"
+ 
+import brandingLogo from "../../assets/images/Soles on Wheels Logo.webp";
+import {
+  FaChevronRight,
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaSearch,
+} from "react-icons/fa";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -35,9 +42,32 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      
+      <div className="company-branding">
+        <img
+          src={brandingLogo}
+          alt="branding"
+          style={{ width: "300px", height: "300px" }}
+        />
 
+        <h1>MUNNAR</h1>
+        <h1>MENU</h1>
+        <p>-Since 2018-</p>
+        <p>Ph: +91 8921152086</p>
+        <p>www.solesonwheels.com</p>
+        <p>Moolakada, Pallivasal, Munnar, Kerala 685612</p>
 
+        <div className="social-icons">
+          <div>
+            <FaInstagram color="#fff" />
+          </div>
+          <div>
+            <FaFacebookF color="#fff" />
+          </div>
+          <div>
+            <FaTwitter color="#fff" />
+          </div> 
+        </div>
+      </div>
 
       {/* Global Search Bar */}
       <input
@@ -45,23 +75,35 @@ const Home = () => {
         placeholder="Search for any food item"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
+        style={{ color: "#000" }}
       />
 
       {/* Category Filter */}
       <select
         value={selectedCategory}
         onChange={(e) => setSelectedCategory(e.target.value)}
+        style={{ color: "#000" }}
       >
-        <option value="All">All Categories</option>
+        <option value="All" style={{ color: "#000" }}>
+          All Categories
+        </option>
         {menu.map((category) => (
-          <option key={category.category} value={category.category}>
+          <option
+            style={{ color: "#000" }}
+            key={category.category}
+            value={category.category}
+          >
             {category.category}
           </option>
         ))}
       </select>
 
       {/* Sorting */}
-      <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+      <select
+        value={sortBy}
+        onChange={(e) => setSortBy(e.target.value)}
+        style={{ color: "#000" }}
+      >
         <option value="">Sort by Price</option>
         <option value="asc">Low to High</option>
         <option value="desc">High to Low</option>

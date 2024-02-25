@@ -1,4 +1,32 @@
-.home-container{
-    color: #fff; 
+.home-container {
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
 
+  .company-branding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+
+    .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      div {
+        display: flex;
+        align-items: center;
+       padding: 5px;
+        border-radius: 50%;
+        background-color: #ccc;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
