@@ -1,6 +1,3 @@
- 
- 
-
 const menu = [
   {
     category: "Appetizers",
@@ -10,18 +7,6 @@ const menu = [
         price: "₹80",
         description:
           "A zesty and spicy snack made with chickpeas, tomatoes, and onions with an Indian twist",
-      },
-      {
-        name: "Pakora (Veg/Onion",
-        price: "₹90",
-        description:
-          "Fresh fried veggie fritters made in South Indian style. They are addictive, aromatic, crunchy and a delicious snack",
-      },
-      {
-        name: "Pakora (Paneer/Chicken",
-        price: "₹150",
-        description:
-          "A lovely snack with crispy textures outside and a moist, soft paneer (Indian cottage cheese within.",
       },
       {
         name: "French Fries",
@@ -53,18 +38,6 @@ const menu = [
         description:
           "A creamy and comforting soup made with sweet corn & packed with veggies that can be enjoyed year-round",
       },
-      {
-        name: "Manchow Soup (Veg/Chicken",
-        price: "₹130/150",
-        description:
-          "A delicious soup recipe made by cooking finely chopped vegetables in hot & spicy broth filled with Asian flavors",
-      },
-      {
-        name: "Hot & Sour Soup (Veg/Chicken",
-        price: "₹130/150",
-        description:
-          "A spicy and hot soup made with mixed fresh vegetables, mushrooms, spices, and soy sauce",
-      },
     ],
     image: "Beef Fry.webp",
   },
@@ -89,12 +62,6 @@ const menu = [
         description:
           "Marinated grilled chicken slices with lettuce and vegetables in toasted bread with dip",
       },
-      {
-        name: "Club Chicken Sandwich",
-        price: "₹150",
-        description:
-          "A slice of heaven with three-layered toasted bread with marinated chicken, egg, vegetables, mayonnaise, and cheese with dip",
-      },
     ],
     image: "Breakfast.webp",
   },
@@ -106,30 +73,6 @@ const menu = [
         price: "₹90",
         description:
           "Fresh farm tomatoes, onions with a sprinkle of lime and pepper",
-      },
-      {
-        name: "Tossed Green Salad",
-        price: "₹120",
-        description:
-          "Fresh locally purchased vegetables with a leafy twist for a healthy meal",
-      },
-      {
-        name: "Spring Rolls (Veg/Chicken",
-        price: "₹120/150",
-        description:
-          "A cylindrical casing of rice paper filled with a shredded mixture of vegetables or chicken and deep-fried.",
-      },
-      {
-        name: "Nuggets (Veg/Chicken",
-        price: "₹120/150",
-        description:
-          "A small piece of vegetable or deboned chicken meat that is breaded or battered, then deep-fried or baked",
-      },
-      {
-        name: "Dragon Chicken",
-        price: "₹200",
-        description:
-          "Thin cut chicken strips are marinated in spicy sauce with dry red chilies and cashews and cooked thoroughly",
       },
       {
         name: "Chicken 65",
@@ -144,30 +87,28 @@ const menu = [
           "Chicken pieces marinated in a spicy mixture, deep-fried and sautéed in masalas",
       },
       {
-        name: "Chilli Chicken (Boneless",
-        price: "₹190",
+        name: "Tomato Soup",
+        price: "₹100",
         description:
-          "One of the most popular Indo-Chinese style dry/thick gravy dishes where chicken is cooked in a variety of sauces",
+          "A healthy and tasty creamy soup recipe prepared mainly with ripe and juicy tomatoes and other spices",
       },
       {
-        name: "Kerala Beef Fry",
-        price: "₹200",
+        name: "Sweet Corn Soup (Veg/Chicken",
+        price: "₹130/150",
         description:
-          "A signature Kerala dish where beef slices are marinated with Indian spices, coconut slices, and curry leaves",
+          "A creamy and comforting soup made with sweet corn & packed with veggies that can be enjoyed year-round",
       },
       {
-        name: "Nuggets",
-        price: "₹150",
-        description: "Beef Dry Fry",
-        price: "₹200",
+        name: "Tomato Soup",
+        price: "₹100",
         description:
-          "A lip-smacking Kerala style fried beef dish where beef is well-cooked in an aroma of Indian spices",
+          "A healthy and tasty creamy soup recipe prepared mainly with ripe and juicy tomatoes and other spices",
       },
       {
-        name: "Beef Kondattam",
-        price: "₹200",
+        name: "Sweet Corn Soup (Veg/Chicken",
+        price: "₹130/150",
         description:
-          "A Kerala specialty starter or side for Ghee rice, Kerala Porotta, or any Indian bread",
+          "A creamy and comforting soup made with sweet corn & packed with veggies that can be enjoyed year-round",
       },
     ],
     image: "Salmon in Sauce.webp",
@@ -188,46 +129,22 @@ const menu = [
           "An all-you-can-eat spread of South Indian and North Indian breakfast spread",
       },
       {
-        name: "Onion Uthappam",
-        price: "₹90",
-        description:
-          "A traditional South Indian version of the Dosa garnished with onions, tomato, carrots, green chilies & coriander leaves",
-      },
-      {
-        name: "English Breakfast",
-        price: "₹250",
-        description:
-          "Fluffy soft Pancakes served with sausages, scrambled eggs, a side of salad, and a glass of fresh fruit juice",
-      },
-      {
         name: "Idli",
         price: "₹60",
         description:
           "A soft, pillowy steamed savory cake made from rice and lentil batter",
       },
       {
-        name: "Bread Omlette",
-        price: "₹70",
+        name: "Tomato Soup",
+        price: "₹100",
         description:
-          "Hot fresh Indian masala double omelet with slices of bread to curb your filling",
+          "A healthy and tasty creamy soup recipe prepared mainly with ripe and juicy tomatoes and other spices",
       },
       {
-        name: "Puttu",
-        price: "₹60",
+        name: "Tomato Soup",
+        price: "₹100",
         description:
-          "Steamed cylinders of ground rice layered with coconut shavings",
-      },
-      {
-        name: "Cornflakes with Milk",
-        price: "₹80",
-        description:
-          "A dose of healthy breakfast with cornflakes, some hot milk, and a banana",
-      },
-      {
-        name: "Channa Bhatura",
-        price: "₹120",
-        description:
-          "A delicious dhaba-style north Indian dish of chickpeas in a delicious sauce of onions and tomato with a puffy, flaky bread",
+          "A healthy and tasty creamy soup recipe prepared mainly with ripe and juicy tomatoes and other spices",
       },
     ],
     image: "Garlic Naan.webp",
@@ -242,24 +159,6 @@ const menu = [
           "A delicious lentil recipe popular in India that is made with tur dal (pigeon pea lentils, onions, tomatoes and spices",
       },
       {
-        name: "Dal Tadka",
-        price: "₹110",
-        description:
-          "Dal tadka is made with lentils, tomatoes, onion and some spices spiced with tadka",
-      },
-      {
-        name: "Channa Masala",
-        price: "₹100",
-        description:
-          "A popular Indian dish of white chickpeas in a spicy and tangy sauce made from onions and tomatoes.",
-      },
-      {
-        name: "Mixed Veg Curry",
-        price: "₹120",
-        description:
-          "A mixture of vegetables cooked together in a traditional Indian onion-tomato gravy",
-      },
-      {
         name: "Veg Korma",
         price: "₹120",
         description:
@@ -272,22 +171,16 @@ const menu = [
           "A lightly spiced, creamy and delicious Punjabi curry made with kidney beans, onions, tomatoes and spices",
       },
       {
-        name: "Dal Makhani",
-        price: "₹140",
+        name: "Tomato Soup",
+        price: "₹100",
         description:
-          "A rich curry made with black lentils & red kidney beans slow-cooked with spices, butter & cream",
+          "A healthy and tasty creamy soup recipe prepared mainly with ripe and juicy tomatoes and other spices",
       },
       {
-        name: "Green Peas Masala",
-        price: "₹120",
+        name: "Sweet Corn Soup (Veg/Chicken",
+        price: "₹130/150",
         description:
-          "A delicious curry of green peas prepared in a cashew onion gravy, topped with butter and garnished with coriander leaves",
-      },
-      {
-        name: "Veg Butter Masala",
-        price: "₹200",
-        description:
-          "A rich & creamy curry made with vegetables, spices, onions, tomatoes, cashews and butter",
+          "A creamy and comforting soup made with sweet corn & packed with veggies that can be enjoyed year-round",
       },
     ],
     image: "Chicken Biryani.webp",
@@ -307,18 +200,6 @@ const menu = [
         description:
           "Marinated chicken that's first grilled and then served in a rich sauce made with tomato, butter, and a special spice blend as a base.",
       },
-      {
-        name: "Chicken Roast",
-        price: "₹170",
-        description:
-          "A spicy semi-gravy made from roasting onions to deep brown & flavored with a combination of Indian spices & tomato",
-      },
-      {
-        name: "Chicken Tikka Masala",
-        price: "₹210",
-        description:
-          "Marinated chicken that's first grilled and then served in a rich sauce made with tomato, butter, and a special spice blend as a base.",
-      },
     ],
     image: "Chicken Noodles.webp",
   },
@@ -331,42 +212,12 @@ const menu = [
         description:
           "One of the most popular Indo-chinese style dry/thick gravy dish where chicken is cooked in a variety of sauces",
       },
-      {
-        name: "Schezwan Chicken",
-        price: "₹200",
-        description:
-          "A chicken stir fry that contains plenty of spice in the form of spicy peppercorns and dried red chilies",
-      },
-      {
-        name: "Sweet & Sour Chicken",
-        price: "₹200",
-        description:
-          "A combination tender cubes of crispy chicken with green bell pepper in a homemade sweet-&-sour pineapple sauce",
-      },
-      {
-        name: "Dragon Chicken",
-        price: "₹200",
-        description:
-          "A popular Indo-Chinese fusion dish where thin cut chicken strips are marinated in spicy sauce with dry red chillies and cashews and cooked thoroughly",
-      },
     ],
     image: "Simple Green Salad.webp",
   },
   {
     category: "BEEF",
     items: [
-      {
-        name: "Kerala Beef Roast",
-        price: "₹180",
-        description:
-          "A Malabar delicacy with beef pieces slow-cooked in a spicy masala with aromatic coconut and curry leaves mixture forming a thick sauce that will savour your senses",
-      },
-      {
-        name: "Kerala Beef Fry",
-        price: "₹190",
-        description:
-          "A traditional Kerala speciality made of slow-cooked beef marinated in a mixture of Indian spices, onions, curry leaves, and coconut slivers",
-      },
       {
         name: "Beef Dry Fry",
         price: "₹200",
@@ -378,18 +229,6 @@ const menu = [
         price: "₹180",
         description:
           "Thin slices of marinated beef stir-fried to juicy perfection in Szechuan sauce",
-      },
-      {
-        name: "Dragon Beef",
-        price: "₹200",
-        description:
-          "A popular Indo-Chinese fusion dish where thin cut beef strips are marinated in spicy sauce with dry red chillies and cashews and cooked thoroughly",
-      },
-      {
-        name: "Chilli Beef",
-        price: "₹200",
-        description:
-          "One of the most popular Indo-chinese style dry/thick gravy dish where beef is cooked in a variety of sauces",
       },
     ],
     image: "Beef Fry.webp",
@@ -430,11 +269,6 @@ const menu = [
           "A Malabari special dish from Kerala where fish is slow-cooked in a sauce with Kodampuli (Malabar tamarind used as a souring agent mixed with Indian spices",
       },
       {
-        name: "Alleppey Fish Masala (Based on Availability",
-        description:
-          "Fish cooked in a sauce consisting of raw mangoes and coconut milk with Indian spices giving it a slightly tangy flavor that gives a celebration to your taste buds",
-      },
-      {
         name: "Kerala Fish Fry (Based on Availability",
         description:
           "Coated with delicious Indian masala and deep-fried in a Tawa, this Kerala fish fry is crispy on the outside with a succulent flesh inside",
@@ -462,6 +296,18 @@ const menu = [
         price: "₹150",
         description:
           "Fragrant basmati rice cooked with aromatic biryani spices, herbs & boiled eggs to yield a delicious meal",
+      },
+      {
+        name: "Veg Biriyani",
+        price: "₹130",
+        description:
+          "An aromatic rice dish made with basmati rice, spices & mixed veggies",
+      },
+      {
+        name: "Egg Biriyani",
+        price: "₹150",
+        description:
+          "Fragrant basmati rice cooked with aromatic biryani spices",
       },
     ],
     image: "Sashimi Sushi.webp",
@@ -534,6 +380,16 @@ const menu = [
         price: "₹30",
         description: "Get your mental blocks away with a cuppa coffee",
       },
+      {
+        name: "Tea",
+        price: "₹25",
+        description: "Fresh hot tea from the Vagamon hills",
+      },
+      {
+        name: "Masala Chai",
+        price: "₹40",
+        description: "Tea made by simmering Indian spices to mila and tea",
+      },
     ],
     image: "Chocolate Drink with Marshmallows.webp",
   },
@@ -552,17 +408,10 @@ const menu = [
         price: "₹120",
         description:
           "Classics never die! A refreshing drink made up of mint and lime",
-      },
-      {
-        name: "Passion Fruit Mojito",
-        price: "₹120",
-        description:
-          "A passion fruit twist to the classic Mojito made with lime, mint leaves & passion fruit",
-      },
+      }, 
     ],
     image: "Fruit Juice.webp",
   },
 ];
- 
 
 export default menu;
