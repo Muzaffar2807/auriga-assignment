@@ -1,13 +1,14 @@
-import React from 'react';
-import "./FilterByPrice.scss"
+ 
+import React from "react";
+import "./FilterByPrice.scss";
 
 const FilterByPrice = ({ sortBy, setSortBy }) => {
   return (
-    <div> 
+    <div className="filter-by-price-container">
       <select
         value={sortBy}
         onChange={(e) => setSortBy(e.target.value)}
-        style={{ color: "#000" }}
+        className="filter-by-price" // added class for styling
       >
         <option value="">Sort by Price</option>
         <option value="asc">Low to High</option>
@@ -15,6 +16,6 @@ const FilterByPrice = ({ sortBy, setSortBy }) => {
       </select>
     </div>
   );
-}
+};
 
-export default FilterByPrice
+export default FilterByPrice;
