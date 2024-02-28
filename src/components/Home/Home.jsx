@@ -4,7 +4,7 @@ import "./Home.scss";
 import menu from "../../assets/data/menuData";
 import MenuCard from "../MenuCard";
 
-import brandingLogo from "../../assets/images/Soles on Wheels Logo.webp";
+import brandingLogo from "../../assets/images/kings2-dhaba-removebg-preview.png";
 import {
   FaChevronRight,
   FaFacebookF,
@@ -43,37 +43,38 @@ const Home = () => {
       })
     : filteredMenu;
 
+     const openFacebookPage = () => {
+       window.open("https://www.facebook.com/abdurah2012/", "_blank");
+     };
+
+     const openFamilyDhanba = () => {
+       window.open("https://kingsfamilydhaba.com/", "_blank");
+     };
   return (
     <div className="home-container">
       <div className="company-branding">
         <img
           src={brandingLogo}
           alt="branding"
-          style={{ width: "300px", height: "300px",  }}
+          style={{ width: "300px", height: "300px" }}
         />
 
-        <h1 style={{ color: "#8B0000" }}>MUNNAR</h1>
+        <h1 style={{ color: "#8B0000" }}>KINGS DHABA </h1>
         <h1 className="menu-text">MENU</h1>
-        <p>-Since 2018-</p>
+        <p>-Since 2019-</p>
         <p>
           Ph:{" "}
           <span style={{ color: "#F59C1C", textDecoration: "underLine" }}>
-            +91 8921152086
+            +91 777334433
           </span>{" "}
         </p>
-        <p style={{ color: "#F59C1C" }}>www.solesonwheels.com</p>
-        <p>Moolakada, Pallivasal, Munnar, </p>
-        <p> Kerala 685612</p>
+        <p  onClick={openFamilyDhanba} style={{ color: "#F59C1C", cursor: 'pointer' }}>www.kingsfamilydhaba.com/</p>
+        <p>Sy No 498499 &, Near Iit Kandi Nh 65, </p>
+        <p>Sangareddy, Telangana.</p>
 
         <div className="social-icons">
-          <div>
-            <FaInstagram color="#fff" />
-          </div>
-          <div>
+          <div onClick={openFacebookPage}>
             <FaFacebookF color="#fff" />
-          </div>
-          <div>
-            <FaTwitter color="#fff" />
           </div>
         </div>
       </div>

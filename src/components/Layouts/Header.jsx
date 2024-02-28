@@ -7,7 +7,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import logo from "../../assets/images/Logo FINAL png.webp";
+import logo from "../../assets/images/logo-removebg-preview.png"
 import { MdAccountCircle } from "react-icons/md";
 
 import "./Header.scss";
@@ -63,13 +63,13 @@ export default function Example() {
           <a href="#" className="-m-1.5 p-1">
             <div className="logo-div">
               <div>
-                <img className="h-9 w-auto" src={logo} alt="Auriga" />
+                <img className="h-9 w-auto pr-2" src={logo} alt="Auriga" />
               </div>
               <div className="text-div">
-                <h1 style={{ fontFamily: "logo-font", color: "#324158" }}>
-                  SOLES ON Wheels
-                </h1>
-                <p className="text2 pr-4">The Backpacker's Hostel</p>
+                <h2 className="logo-text-1" style={{ fontFamily: "logo-font", color: "#324158" }}>
+                  Kings Family Dhaba
+                </h2>
+                <p className="text2 pr-4">Sangareddy</p>
               </div>
             </div>
           </a>
@@ -89,7 +89,7 @@ export default function Example() {
             <p className="px-1 py-0 mt-2 align-middle">Home</p>
           </a>
 
-          <Popover className="relative">
+          {/* <Popover className="relative">
             <Popover.Button
               style={{ fontFamily: "logo-text-font" }}
               className="flex     items-center gap-x-1 text-sm  leading-6 text-gray-900"
@@ -140,7 +140,7 @@ export default function Example() {
                 </div>
               </Popover.Panel>
             </Transition>
-          </Popover>
+          </Popover> */}
 
           <a href="#" className="text-sm   mt-1 leading-6 text-gray-900 ">
             <p className="px-1 py-0 mt-2 ">About</p>
